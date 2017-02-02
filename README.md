@@ -2,6 +2,12 @@
 
 `phpcheck` is a shell script written in `Bash` that helps you to lint your `.php` files in batch in order to check if there's any .php files with syntax errors.
 
+# Requirements
+
+- Bash
+- PHP
+
+
 # Install
 
 phpcheck can be installed globally by doing the following steps:
