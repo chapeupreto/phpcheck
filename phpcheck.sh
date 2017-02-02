@@ -17,6 +17,6 @@ if [[ -d "${arg}" ]]; then
 	find "${arg}" -name '*.php' -exec php -l \{\} > /dev/null 2> /tmp/"${UUID}" \;
 
 	if [[ -s /tmp/"${UUID}" ]]; then
-		cat /tmp/"${UUID}" && rm /tmp/"${UUID}" && exit 1;
+		cat /tmp/"${UUID}" && rm /tmp/"${UUID}"
 	fi
 fi
