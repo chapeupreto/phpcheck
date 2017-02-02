@@ -3,7 +3,7 @@
 which php &> /dev/null
 if [[ $? -ne 0 ]]; then
 	echo -e "\nSorry! You need to have PHP installed in order for this to work.\n\n"
-	exit
+	exit 1;
 fi
 
 arg="${1:-.}"
