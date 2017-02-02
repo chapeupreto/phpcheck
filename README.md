@@ -4,6 +4,7 @@
 
 # Requirements
 
+- GNU/Linux
 - Bash
 - PHP
 
@@ -21,7 +22,9 @@ mv phpcheck.sh /usr/local/bin/phpcheck
 
 Once `phpcheck` is installed, one can simply execute something like:
 
-`phpcheck /dir/where/my/php/files/are/`
+```bash
+phpcheck /dir/where/my/php/files/are/
+```
 
 This will lint all `.php` files in the selected directory and it will outputs the ones with syntax errors.
 
