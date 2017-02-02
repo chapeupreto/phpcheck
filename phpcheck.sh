@@ -19,6 +19,4 @@ if [[ -d "${arg}" ]]; then
 	if [[ -s /tmp/"${UUID}" ]]; then
 		cat /tmp/"${UUID}" && rm /tmp/"${UUID}" && exit 1;
 	fi
-
-	exit 0;
 fi
