@@ -17,8 +17,10 @@ Once `phpcheck` is installed, one can simply execute something like:
 
 `phpcheck /dir/where/my/php/files/are/`
 
-This will lint all `.php` files in the selected directory and outputs the ones with syntax errors.
+This will lint all `.php` files in the selected directory and it will outputs the ones with syntax errors.
 
-You can also lint a single file:
+> If no argument is supplied, then working directory will be used by default.
+
+You can also lint just a single file:
 
 `phpcheck myAwesomeFile.php`
