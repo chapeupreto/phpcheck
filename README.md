@@ -9,7 +9,7 @@
 - PHP
 
 
-# Install
+# Installation
 
 phpcheck can be installed globally by doing the following steps:
 
@@ -33,3 +33,7 @@ This will lint all `.php` files in the selected directory and it will outputs th
 You can also lint just a single file:
 
 `phpcheck myAwesomeFile.php`
+
+# Contribute
+
+Found this useful and wan't to make it better? Please fork this repo and pull request!
