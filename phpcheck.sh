@@ -13,7 +13,7 @@ if [[ -f "${arg}" ]]; then
 fi
 
 if [[ -d "${arg}" ]]; then
-	UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+	UUID=$(cat /dev/urandom | LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 	find "${arg}" -name '*.php' -exec php -l \{\} > /dev/null 2> /tmp/"${UUID}" \;
 
 	if [[ -s /tmp/"${UUID}" ]]; then
