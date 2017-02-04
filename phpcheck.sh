@@ -18,5 +18,7 @@ if [[ -d "${arg}" ]]; then
 
 	if [[ -s /tmp/"${UUID}" ]]; then
 		cat /tmp/"${UUID}" && rm /tmp/"${UUID}"
+	else
+		echo "Directory '${arg}' has no PHP files with syntax errors."
 	fi
 fi
