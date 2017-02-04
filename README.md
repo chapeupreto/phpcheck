@@ -4,7 +4,7 @@
 
 # Requirements
 
-- GNU/Linux
+- Unix-like OS
 - Bash
 - PHP
 
